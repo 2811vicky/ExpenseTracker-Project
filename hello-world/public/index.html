@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="../src/index.js" type="text/js"></script>
+</body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAymZ2KydCrA7KNjRbJ7Lazz9Prk1-Y5r0",
+    authDomain: "expensetracker-8ba2e.firebaseapp.com",
+    projectId: "expensetracker-8ba2e",
+    storageBucket: "expensetracker-8ba2e.appspot.com",
+    messagingSenderId: "432318193628",
+    appId: "1:432318193628:web:d558a971dfbb3100233919",
+    measurementId: "G-R3S6T7YSVJ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</html>
